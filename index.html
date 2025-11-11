@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tierarztpraxis Dr. Robl</title>
+	<meta name="description" content="Tierarztpraxis Dr. Robl – professionelle, einfühlsame Tiermedizin.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header" role="banner">
+		<div class="container header-inner">
+			<a href="#" class="brand" aria-label="Startseite Tierarztpraxis Dr. Robl">
+				<span class="brand-mark" aria-hidden="true">🐾</span>
+				<span class="brand-name">Tierarztpraxis Dr. Robl</span>
+			</a>
+			<nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+				<ul class="nav-list">
+					<li><a href="#leistungen">Leistungen</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#zeiten">Sprechzeiten</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="site-main" role="main">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="container hero-inner">
+				<div class="hero-text">
+					<h1 id="hero-title">Professionelle, einfühlsame Tiermedizin</h1>
+					<p>Moderne Diagnostik, sanfte Behandlung, klare Beratung – für das Wohl Ihres Tieres.</p>
+					<div class="hero-cta">
+						<a class="button primary" href="#kontakt">Termin anfragen</a>
+						<a class="button" href="#leistungen">Leistungen ansehen</a>
+					</div>
+				</div>
+				<div class="hero-media" aria-hidden="true">
+					<div class="hero-illustration"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="leistungen" class="section" aria-labelledby="leistungen-title">
+			<div class="container">
+				<h2 id="leistungen-title">Unsere Leistungen</h2>
+				<ul class="cards">
+					<li class="card">
+						<h3>Allgemeinmedizin</h3>
+						<p>Untersuchungen, Impfungen, Parasitenprophylaxe und Gesundheitschecks.</p>
+					</li>
+					<li class="card">
+						<h3>Chirurgie</h3>
+						<p>Schonende Eingriffe mit moderner Narkose und sorgsamer Nachsorge.</p>
+					</li>
+					<li class="card">
+						<h3>Diagnostik</h3>
+						<p>Digitales Röntgen, Ultraschall und Labor für schnelle Ergebnisse.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="team" class="section alt" aria-labelledby="team-title">
+			<div class="container">
+				<h2 id="team-title">Lernen Sie uns kennen</h2>
+				<p>Ein erfahrenes Team, das sich Zeit nimmt und zuhört.</p>
+			</div>
+		</section>
+
+		<section id="info-dropdown" class="section" aria-labelledby="info-title">
+			<div class="container">
+				<h2 id="info-title">Wissenswertes</h2>
+				<div class="dropdown">
+					<button class="dropdown-toggle" id="dropdown-toggle"
+						aria-expanded="false"
+						aria-controls="dropdown-panel">
+						Mehr Informationen anzeigen
+						<span class="chevron" aria-hidden="true"></span>
+					</button>
+					<div class="dropdown-panel" id="dropdown-panel" hidden>
+						<div class="dropdown-grid">
+							<div class="dropdown-text">
+								<h3>Stressfreier Praxisbesuch</h3>
+								<p>Bringen Sie gerne die Lieblingsdecke oder ein vertrautes Spielzeug Ihres Tieres mit. Kurze Wege, ruhige Räume und sanfte Routinen helfen, den Besuch entspannt zu gestalten.</p>
+								<ul>
+									<li>Ruhiger Wartebereich mit getrennten Zonen</li>
+									<li>Sanfte Handling-Techniken</li>
+									<li>Transparente Abläufe und klare Kommunikation</li>
+								</ul>
+							</div>
+							<figure class="dropdown-media">
+								<img src="https://images.unsplash.com/photo-1558944351-c0a035b35b6f?q=80&w=1600&auto=format&fit=crop"
+									alt="Tierärztin hält eine Katze beruhigend im Arm">
+								<figcaption>Einfühlsame Betreuung in der Behandlung.</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="zeiten" class="section alt" aria-labelledby="zeiten-title">
+			<div class="container">
+				<h2 id="zeiten-title">Sprechzeiten</h2>
+				<div class="hours">
+					<div><strong>Mo–Fr:</strong> 09:00–12:00 & 14:00–18:00</div>
+					<div><strong>Sa:</strong> 10:00–13:00</div>
+					<div><strong>Notfälle:</strong> Nach Vereinbarung</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="kontakt" class="section" aria-labelledby="kontakt-title">
+			<div class="container">
+				<h2 id="kontakt-title">Kontakt</h2>
+				<div class="contact-grid">
+					<div class="contact-card">
+						<h3>Praxis</h3>
+						<p>Musterstraße 12<br>12345 Musterstadt</p>
+						<p><a href="tel:+491234567890">+49 123 456 7890</a><br>
+						<a href="mailto:info@dr-robl.de">info@dr-robl.de</a></p>
+					</div>
+					<form class="contact-form" aria-label="Kontaktformular" onsubmit="return false;">
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text" autocomplete="name" placeholder="Ihr Name">
+						<label for="email">E-Mail</label>
+						<input id="email" name="email" type="email" autocomplete="email" placeholder="name@beispiel.de">
+						<label for="message">Nachricht</label>
+						<textarea id="message" name="message" rows="4" placeholder="Wie können wir helfen?"></textarea>
+						<button class="button primary" type="submit">Nachricht senden</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" role="contentinfo">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Tierarztpraxis Dr. Robl</p>
+			<ul class="footer-links">
+				<li><a href="#impressum">Impressum</a></li>
+				<li><a href="#datenschutz">Datenschutz</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
