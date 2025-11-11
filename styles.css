@@ -246,33 +246,21 @@ img { max-width: 100%; display: block; }
 
 /* Contact */
 .contact-grid {
-	display: grid;
-	grid-template-columns: 0.9fr 1.1fr;
-	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		gap: 12px;
 }
 .contact-card {
+	flex: 1;
+	
+	
 	background: var(--card);
 	border: 1px solid #e2e8f0;
 	border-radius: 14px;
 	padding: 16px;
 }
-.contact-form {
-	display: grid;
-	gap: 10px;
-}
-.contact-form input,
-.contact-form textarea {
-	width: 100%;
-	padding: 10px 12px;
-	border: 1px solid #cbd5e1;
-	border-radius: 10px;
-	font: inherit;
-}
-.contact-form input:focus-visible,
-.contact-form textarea:focus-visible {
-	outline: 3px solid var(--ring);
-	outline-offset: 1px;
-}
+
 
 /* Footer */
 .site-footer {
