@@ -20,6 +20,42 @@ src="https://www.google.de/maps/place/Tierarztpraxis+am+Gesundbrunnen+-+Dr.+Volk
                 >
                 </iframe>
 
+-------------------------------------------------dropdown-------------------------------------------------------
+                <div class="dropdown">
+            <button
+              class="dropdown-toggle"
+              id="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="dropdown-panel"
+            >
+              Mehr Informationen anzeigen
+              <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown-panel" id="dropdown-panel" hidden>
+              <div class="dropdown-grid">
+                <div class="dropdown-text">
+                  <ul class="sub-card">
+				<li class="card">Weichteilchirurgie</li>
+				<li class="card">Hochfrequenzchirurgie</li>
+				<li class="card">EKG-Überwachung</li>
+				<li class="card">Ultrakurzzeitnarkose</li>
+			  </ul>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+
+.sub-card{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	gap: 8px;
+	list-style-type: none;
+}
 
 
             
